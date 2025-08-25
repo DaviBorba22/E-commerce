@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #0b0b0b;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar ul {
+  display: flex;
+  height: 100px;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.logo {
+  margin-right: auto;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.links li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.icons {
+  display: flex;
+  gap: 15px;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.itens {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.ofertas {
+    width: 1475px;
+}
+
+.cata img {
+    width: 140px;
+    margin: 15px 137px;
+}
+
+.botoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.botoes button {
+    display: flex;
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
+.botoes button :hover { 
+  transform: scale(1.05);
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
+}
+
+.carrinho-lateral {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 350px;
+  height: 100%;
+  background-color: #0B0B0B;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  z-index: 1000;
+
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.carrinho-aberto {
+  transform: translateX(0);
+}
+
+#close-cart {
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: #ffffff;
+  padding: 15px 20px;
+}
+
+#cart {
+  border: transparent;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#finalizar {
+  display: flex;
+  background-color: #5033C3;
+  color:#ffffff;
+  cursor: pointer;
+  padding: 10px 125px;
+  max-height: max-content;
+  border-radius: 10px;
+  position: fixed;
+  border: none;
+  bottom: 60px;
+  font-weight: bold;
+}
+
+
+footer {
+    display: flex;
+    background-color: #1A1A1A;
+    height: 60px;
+}
+
+footer p {
+    display: flex;
+    color: #676767;
+    margin: 20px  90px;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
